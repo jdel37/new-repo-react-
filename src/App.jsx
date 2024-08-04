@@ -1,6 +1,6 @@
 import './App.css'
 import { useMovies } from './hooks/useMovies.js'
-import { Movies } from './Components/Movies.jsx'
+import { Movies } from './Components/Movies.js'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import debounce from 'just-debounce-it'
 function useSearch () {
@@ -80,7 +80,7 @@ function App() {
             <input
               type="search"
               id="default-search"
-              className="block w-full p-4 pl-10 text-sm text-gray-900 border border-transparent rounded-lg bg-blue-100 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-blue-200 dark:border-blue-300 dark:placeholder-gray-400 dark:text-black dark:focus:ring-2 dark:focus:ring-indigo-500 dark:focus:border-indigo-500 shadow-sm transition-all duration-300"
+              className="block w-full p-4 pl-10 text-base text-gray-900 border border-transparent rounded-lg bg-blue-100 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-blue-200 dark:border-blue-300 dark:placeholder-gray-400 dark:text-black dark:focus:ring-2 dark:focus:ring-indigo-500 dark:focus:border-indigo-500 shadow-sm transition-all duration-300"
               placeholder="Search movies..."
               value={search}
               onChange={handleChange}
